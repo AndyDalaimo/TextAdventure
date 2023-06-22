@@ -49,7 +49,13 @@ public:
 	// This function opens or unlocks an obstacle, returning the success/failure
 	string Open(string Object);
 	// This function reads the player's inventory for a specific item, or prints the whole thing if no string is passed in
-	string Inv(string Item = " ");
+	string Inv(string Item = " ");	
+
+	/* @author Andy Dalaimo
+	 * This function allows the player to attack enemy, returning the reaction 
+	 * TODO: Need to add Enemy to Map first then create Declaration
+	 */
+	string Attack(string Reaction);
 
 private:
 	// Removes a substring from a given string, and returns the before and after

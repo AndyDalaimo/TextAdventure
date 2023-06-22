@@ -17,6 +17,8 @@ void Interface::PopulateCommandArray()
 	InputMappings.push_back(CommandMapping(&Game::Take, { "take", "pickup", "collect" }));
 	InputMappings.push_back(CommandMapping(&Game::Open, { "open", "unlock" }));
 	InputMappings.push_back(CommandMapping(&Game::Inv,  { "inventory", "bag" }));
+	// @author Andy Dalaimo: Added Attack Input 
+	InputMappings.push_back(CommandMapping(&Game::Attack, { "attack", "use sword" }));
 }
 
 // This functions asks the player for their next move

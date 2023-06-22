@@ -74,6 +74,19 @@ string Game::Move(string Direction)
 	return GameMap->EnterRoom(CurrentRoom);
 
 }
+
+/* @author Andy Dalaimo
+ * This function handles Player attacks to Enemy. The string returned will be Enemy Type/Name 
+ * along with Health remaining. 
+ * TODO: Create Enemy Class with Type and battle mechanics
+ */
+string Game::Attack(string Reaction)
+{
+	// TEST
+	Reaction = "Player Attacks ";
+	return Reaction;
+}
+
 // This function allows the player to take an item, returning whether or not it was taken
 string Game::Take(string Object)
 {

@@ -149,6 +149,10 @@ void Map::InitObstacles()
 {
 	// QUESTION M4: The obstacles are recreated in-line here. Can you think of a way to load them from a seprate file?
 	Obstacles.push_back(Obstacle("chest", 4, "key", false, "This is Room 5, a chest lays open on the ground, inside a little goblin gives you a thumbs up"));
+	/* @author Andy Dalaimo : Obstacle added - Enemy
+	 * TODO: Make resolution for Obstacle
+	 */
+	Obstacles.push_back(Obstacle("enemy", 0, "dead", false, "This is Room 1, an enemy is slain on the floor. Yuck."));
 }
 // This function notes the obstacle as done, and replaces the world map description
 bool Map::OvercomeObstacle(string ObstacleName)
