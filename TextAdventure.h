@@ -55,7 +55,8 @@ public:
 	 * This function allows the player to attack enemy, returning the reaction 
 	 * TODO: Need to add Enemy to Map first then create Declaration
 	 */
-	string Attack(string Reaction);
+	string Attack(string Action);
+	string Block(string Block);
 
 private:
 	// Removes a substring from a given string, and returns the before and after

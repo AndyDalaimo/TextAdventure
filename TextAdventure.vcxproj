@@ -127,12 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Interface.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="TextAdventure.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Interface.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Map.h" />

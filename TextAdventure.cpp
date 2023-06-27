@@ -80,11 +80,17 @@ string Game::Move(string Direction)
  * along with Health remaining. 
  * TODO: Create Enemy Class with Type and battle mechanics
  */
-string Game::Attack(string Reaction)
+string Game::Attack(string Action)
 {
 	// TEST
-	Reaction = "Player Attacks ";
-	return Reaction;
+	Action = "Player Attacks ";
+	return Action;
+}
+
+string Game::Block(string Block)
+{
+	Block = "Player Blocks ";
+	return Block;
 }
 
 // This function allows the player to take an item, returning whether or not it was taken
