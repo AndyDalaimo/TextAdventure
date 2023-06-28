@@ -1,5 +1,6 @@
 #pragma once
 #include "TextAdventure.h"
+
 using namespace std;
 class Game;
 

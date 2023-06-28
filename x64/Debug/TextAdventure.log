@@ -1,6 +1,4 @@
-﻿  Interface.cpp
-  Inventory.cpp
-  Map.cpp
+﻿  Map.cpp
   TextAdventure.cpp
   Generating Code...
   TextAdventure.vcxproj -> D:\CPP_Projects\TextAdventure\x64\Debug\TextAdventure.exe

@@ -7,6 +7,7 @@
 #include "Map.h"
 #include "Interface.h"
 #include "Inventory.h"
+#include "Enemy.h"
 using namespace std;
 class Inventory;
 
@@ -35,6 +36,9 @@ public:
 
 	// This is a reference to the player's inventory
 	Inventory* PlayerInventory = nullptr;
+
+	// Vector to hold enemies for the Map
+	vector<Enemy> Enemies;
 
 	// This is the index of the map that we start at
 	int StartRoom = 4;

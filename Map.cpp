@@ -152,7 +152,7 @@ void Map::InitObstacles()
 	/* @author Andy Dalaimo : Obstacle added - Enemy
 	 * TODO: Make resolution for Obstacle
 	 */
-	Obstacles.push_back(Obstacle("enemy", 0, "dead", false, "This is Room 1, an enemy is slain on the floor. Yuck."));
+	Obstacles.push_back(Obstacle("orc", 0, "dead", false, "This is Room 1, an enemy is slain on the floor. Yuck."));
 }
 // This function notes the obstacle as done, and replaces the world map description
 bool Map::OvercomeObstacle(string ObstacleName)

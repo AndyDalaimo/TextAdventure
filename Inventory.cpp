@@ -7,6 +7,7 @@ Inventory::Inventory(Game* InGame)
 	TextAdv = InGame;
 	// In here we populate the list of items in our game
 	InventoryList.push_back(Item("key", 3, false, false, "This is room 4"));
+	InventoryList.push_back(Item("sword", 6, false, false, "This is room 8"));
 }
 
 // This function collects the item from the room if possible

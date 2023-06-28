@@ -16,6 +16,7 @@ Game::Game()
 	GameMap = new Map(this);
 	PlayerInterface = new Interface(this);
 	PlayerInventory = new Inventory(this);
+	Enemies.push_back(Enemy("Orc", "nothing"));
 
 	// Introduce, prompt, and end the game
 	cout << "Welcome to " << GameName << "!\n" << GameMap->EnterRoom(StartRoom);
@@ -83,7 +84,18 @@ string Game::Move(string Direction)
 string Game::Attack(string Action)
 {
 	// TEST
-	Action = "Player Attacks ";
+	if (PlayerInventory->HasItem("sword"))
+		Action = "You swing the sword amatuerishly.";
+	else
+		return "You swing your hands wildly. Yielding no effect.";
+
+	for (Enemy& enemy : Enemies)
+	{
+		if (enemy.GetName() == "Orc")
+		{
+			std::cout << "You're Attacking an Orc" << endl;
+		}
+	}
 	return Action;
 }
 

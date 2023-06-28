@@ -4,6 +4,6 @@ North-East Area,You are in the north-east area of the field. You can go west and
 West Area,You are in the west area of the field. An old iron key lays at your feet. You can go north east and south.,NES
 Central Area,You are in the central area of the field. A chest lays at your feet. You can go north east south and west.,NESW
 East Area,You are in the east area of the field. You can go north west and south.,NSW
-South-West Area,You are in the south-west area of the field. You can go north and east.,NE
+South-West Area,You are in the south-west area of the field. An old rusted sword lays at your feet. You can go north and east.,NE
 South Area,You are in the south area of the field. You can go north east and west.,NEW
 South-East Area,You are in the south-east area of the field. You can go north and west.,NW
