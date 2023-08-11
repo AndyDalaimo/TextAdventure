@@ -1,9 +1,9 @@
 #include "Enemy.h"
 
 Enemy::Enemy(std::string name, std::string item)
-	: type(name), heldItem(item), enemyReaction(""), enemyHealth(100)
+	: type(name), heldItem(item), enemyReaction(""), enemyHealth(50)
 {
-
+	
 }
 
 Enemy::~Enemy()
@@ -27,11 +27,11 @@ std::string Enemy::GetReaction() const
 
 int Enemy::GetHealth() const
 {
-	return enemyHealth;
+	return healthRef;
 }
 
 void Enemy::PlayerAttack(int attack) const
 {
-	// enemyHealth -= attack;
+	healthRef = healthRef - attack;
 }
 

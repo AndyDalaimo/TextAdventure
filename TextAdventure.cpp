@@ -79,7 +79,7 @@ string Game::Move(string Direction)
 /* @author Andy Dalaimo
  * This function handles Player attacks to Enemy. The string returned will be Enemy Type/Name 
  * along with Health remaining. 
- * TODO: Create Enemy Class with Type and battle mechanics
+ * TODO: Overcome obstacle after player has killed enemy (8/11/2023)
  */
 string Game::Attack(string Action)
 {
@@ -89,13 +89,21 @@ string Game::Attack(string Action)
 	else
 		return "You swing your hands wildly. Yielding no effect.";
 
-	for (Enemy& enemy : Enemies)
+	// Allow player to attack enemy if they are still alive
+	if (this->CurrentRoom == 0 && Enemies[0].GetHealth() > 0)
+	{
+		std::cout << "You're Attacking an Orc" << endl;
+		Enemies[0].PlayerAttack(10);
+		std::cout << "Enemy Health: " << Enemies[0].GetHealth() << endl;
+	}
+	
+	/*for (Enemy& enemy : Enemies)
 	{
 		if (enemy.GetName() == "Orc")
 		{
 			std::cout << "You're Attacking an Orc" << endl;
 		}
-	}
+	}*/
 	return Action;
 }
 

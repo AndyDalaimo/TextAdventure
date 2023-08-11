@@ -19,6 +19,7 @@ public:
 	~Enemy();
 
 	int enemyHealth;
+	int& healthRef = enemyHealth;
 
 	std::string GetHeldItem() const;
 	std::string GetName() const;
